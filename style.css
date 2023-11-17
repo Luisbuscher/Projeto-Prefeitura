@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Orelega+One&display=swap');
+@font-face {
+font-family: "fabella";
+src: url("fabella_flower/fabella-flower.ttf") format("opentype");
+font-weight: normal;
+}
+:root{
+--cor0:#FFFFFF;
+--cor1:#daffc7;
+--cor2:#84a894;
+--cor3:#1a5c37;
+--cor4:#088A29;
+--cor5:#0B3B0B;
+/* o :root serve para tu bota as cores que tu quiser ai e ñ precisa fica preocurando*/
+--fonte-padrao:arial,verdana,helvetica,sans-serif;
+--fonte-destaque:  'Orelega One', cursive;
+--fonte-fabella:"fabella",cursive;
+}
+body{
+background-color:var(--cor1);
+text-decoration: none;
+line-height: 1.2em;
+}
+
+header{
+  background-image: linear-gradient(to bottom, black, green);
+  min-height: 220px;
+  padding-top: 30px;
+  text-align: center;
+  width: 90px;
+  height: 50px;
+  width: 1442px;
+    
+}
+
+p{
+font-family: var(--fonte-destaque);
+padding: 5px;
+}
+
+header > p {
+font-size: 1.2em;
+max-width: 300px;
+margin: auto;
+padding-bottom: 50px;
+}
+
+nav{
+    background-color: var(--cor5);
+    padding: 10px;
+    box-shadow: 0px, 7px, 9px rgba(0, 0, 0, 0.363);
+}
+
+nav > a{
+padding: 10px;
+color: white;
+border-radius: 5px;
+}
+
+p{
+margin: 15px 0px;
+}
+
+
+body{
+display: flex;
+flex-direction: center;
+justify-content: center;
+align-items: center;
+}
+
+#slider img{
+opacity: 0;
+position: absolute;
+width: 500px;
+height: 250px;
+transition: opacity 900ms;
+align-items: center;
+top: 220%;
+left: 0%;
+right:1cm;
+
+
+}
+
+#slider{
+    width: 500px;
+    height: 1%;
+    max-height: 150px;
+    position:relative;
+    margin: 0px auto;
+
+object-fit: cover;
+align-items: center;
+justify-content: center;
+padding: 20px;
+}
+
+#slider img.selected{
+opacity: 1;
+justify-content: center;
+
+}
+
+header > nav > a:hover{
+transition: 2000ms;
+background-color: var(--cor2);
+box-shadow: 40px, 70px, 70px rgba(0, 0, 0, 0.192);
+}
+
+
+#menu {
+		 max-width:220px;
+         width: 100%;
+         background-image: linear-gradient(to top, green, rgba(255, 255, 255, 0.425));
+         margin-top: 35px;
+		}
+
+#menu ul li {
+		margin: 0; 
+        padding: 0px;
+		border-bottom: 1px solid #CCC;
+		text-align: center;
+		list-style-type: none;
+		}
+
+#menu a:link {
+	
+		text-decoration: none;
+		padding: 20px;
+		display: block;
+        transition: background .3s;
+        text-transform: uppercase;
+		}
+#menu a:hover {
+		background: #E5F0FF;
+		color: white;
+		}
+
+        header{
+            background-image: linear-gradient(to top, rgba(255, 255, 255, 0.425), green);
+          margin: -8px;
+        }
+#menu a{
+    color: white;
+}
